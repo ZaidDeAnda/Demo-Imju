@@ -5,7 +5,7 @@ import streamlit as st
 
 logger = logging.getLogger()
 consumer_key = st.secrets["consumer_key"]
-consumer_secret = st.secrets(["consumer_secret"])
+consumer_secret = st.secrets["consumer_secret"]
 access_token = st.secrets["access_token"]
 access_token_secret = st.secrets["access_token_secret"]
 
