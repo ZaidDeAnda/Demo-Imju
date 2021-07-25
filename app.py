@@ -15,10 +15,6 @@ import tweepy
 import json
 import logging
 from config import create_api
-import config
-
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
 
 api = create_api()
 
