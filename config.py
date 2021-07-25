@@ -4,10 +4,10 @@ import os
 import streamlit as st
 
 logger = logging.getLogger()
-consumer_key = st.secrets("consumer_key")
-consumer_secret = st.secrets("consumer_secret")
-access_token = st.secrets("access_token")
-access_token_secret = st.secrets("access_token_secret")
+consumer_key = st.secrets["consumer_key"]
+consumer_secret = st.secrets(["consumer_secret"])
+access_token = st.secrets["access_token"]
+access_token_secret = st.secrets["access_token_secret"]
 
 def create_api():
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
